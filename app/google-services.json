@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1039230993167",
+    "firebase_url": "https://kmap-71468-default-rtdb.firebaseio.com",
+    "project_id": "kmap-71468",
+    "storage_bucket": "kmap-71468.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039230993167:android:e32bb2d5a7f550e1ddf47a",
+        "android_client_info": {
+          "package_name": "com.example.kmap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKTJqhfN7t2wc-aAP25Qu83GzCJCoZ5AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
