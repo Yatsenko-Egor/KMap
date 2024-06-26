@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon_sig"
+
+    tools:context=".SightPage">
+
+    <ScrollView
+        android:id="@+id/myview"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" >
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/ViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <ImageButton
+                    android:id="@+id/dot1"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/round_button3"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="Dot 1" />
+
+                <ImageButton
+                    android:id="@+id/dot2"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/round_button2"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+
+                    android:contentDescription="Dot 2" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/SightName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textSize="32dp" />
+
+            <TextView
+                android:id="@+id/SightInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+
+
+                android:textSize="22dp" />
+            <Button
+                android:id="@+id/buildRouteButton"
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="#F5DEB3"
+                android:drawableRight="@drawable/route_little"
+                android:gravity="right"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:layout_gravity="center"
+
+                android:drawablePadding="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Построить маршрут"
+                android:onClick="clickBuildRouteButton" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

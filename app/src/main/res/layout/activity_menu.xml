@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenu"
+
+    tools:context=".Menu">
+
+
+    <Button
+        android:id="@+id/button_MainMenu"
+
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:backgroundTint="#F5DEB3"
+        android:drawableLeft="@drawable/route"
+        android:onClick="clickBuildRouteButton"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="170dp"
+        android:text="Построить маршрут"
+        app:layout_constraintBottom_toTopOf="@+id/button2_MainMenu"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <Button
+        android:id="@+id/button2_MainMenu"
+
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:backgroundTint="#F5DEB3"
+        android:drawableLeft="@drawable/monum"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="170dp"
+        android:text="Достопримечательности"
+        android:onClick="ClickButton2"
+        app:layout_constraintTop_toBottomOf="@+id/button_MainMenu"
+        app:layout_constraintBottom_toTopOf="@+id/button3_MainMenu"
+
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button3_MainMenu"
+
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:backgroundTint="#F5DEB3"
+        android:drawableLeft="@drawable/ways"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="170dp"
+        android:text="Маршруты"
+        android:onClick="ClickButton3"
+        app:layout_constraintTop_toBottomOf="@+id/button2_MainMenu"
+        app:layout_constraintBottom_toTopOf="@+id/button4_MainMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button4_MainMenu"
+
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:backgroundTint="#F5DEB3"
+        android:drawableLeft="@drawable/map"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="170dp"
+        android:text="Карта"
+        android:onClick="ClickButton4"
+
+        app:layout_constraintTop_toBottomOf="@id/button3_MainMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

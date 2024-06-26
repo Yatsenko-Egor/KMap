@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="button_color">#FFAD00</color>
+    <color name="time_theme_color">#FF000000</color>
+    <color name="infoBarBackground">#FF000000</color>
+    <color name="navigationBarColor">#FF000000</color>
+
 </resources>

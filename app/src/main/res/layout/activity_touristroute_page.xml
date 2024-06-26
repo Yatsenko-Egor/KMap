@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fon_sig"
+    tools:context=".TouristRoutePage">
+
+    <ScrollView
+        android:id="@+id/myview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/ViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop" />
+
+            <LinearLayout
+                android:id="@+id/dotsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp"> <!-- Добавляем отступ сверху -->
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+            <TextView
+                android:id="@+id/TouristRouteName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/TouristRouteInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:textSize="22sp" />
+        </LinearLayout>
+            <Button
+                android:id="@+id/buildRouteButton"
+                style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="#F5DEB3"
+                android:drawableRight="@drawable/route_little"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="16dp"
+                android:layout_gravity="center"
+
+                android:drawablePadding="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Построить маршрут"
+                android:onClick="clickBuildRouteButton" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

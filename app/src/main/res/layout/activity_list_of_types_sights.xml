@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainmenu"
+
+    tools:context=".ListOfTypesSights">
+
+    <Button
+        android:id="@+id/button_TypeSights"
+        style="@style/Widget.Material3.Button.IconButton.Filled.Tonal"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:backgroundTint="#F5DEB3"
+        android:text="Музеи"
+        android:drawableLeft="@drawable/museum"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="170dp"
+        android:onClick="typeSelection"
+        app:layout_constraintBottom_toTopOf="@+id/button2_TypeSights"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <Button
+        android:id="@+id/button2_TypeSights"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:backgroundTint="#F5DEB3"
+        android:drawableLeft="@drawable/monument"
+        android:drawablePadding="170dp"
+        android:gravity="center"
+        android:onClick="typeSelection"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        android:text="Памятники"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        app:layout_constraintTop_toBottomOf="@+id/button_TypeSights"
+        app:layout_constraintBottom_toTopOf="@+id/button3_TypeSights"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button3_TypeSights"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:text="Архитектура"
+        android:textSize="27sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#F5DEB3"
+        android:drawableLeft="@drawable/church"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        android:drawablePadding="170dp"
+        android:onClick="typeSelection"
+        app:layout_constraintTop_toBottomOf="@+id/button2_TypeSights"
+        app:layout_constraintBottom_toTopOf="@+id/button4_TypeSights"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <Button
+        android:id="@+id/button4_TypeSights"
+        style="@style/Widget.Material3.Button.TonalButton"
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:backgroundTint="#F5DEB3"
+        android:drawableLeft="@drawable/park"
+        android:drawablePadding="170dp"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp"
+        android:text="Парки"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:onClick="typeSelection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3_TypeSights" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
